@@ -51,7 +51,7 @@ footer {
             color: #fff;
             margin-right: 10px;
             border-radius: 100%;
-            @include flex_center
+            @include flex_center;
             span   {
                 color: #fff;
                 
@@ -85,7 +85,7 @@ footer {
             font-weight: 300;
         }
         
-        
+
     }
     &__midwrap {
         &-list {
