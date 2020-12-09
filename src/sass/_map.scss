@@ -1,0 +1,38 @@
+.map {
+    min-height: 715px;
+    background: url('../img/bg/map.jpg') center (center / cover) no-repeat;
+    padding-top: 50px;
+    position: relative;
+
+    &__logo {
+        background-color: #fff;
+        color: #000;
+        // margin-top: 35px;
+    }
+    &__title {
+        color: #fff;
+    }
+    &__subtitle {
+        color: #fff;
+        font-style: 17px;
+        line-height: 21px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    &__cities {
+        // text-decoration:none;
+        position: absolute;
+        color: #1fbad6;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 50px;
+        font-size: 15px;
+        text-transform: uppercase;
+        transition: 0.5s all;
+        &:hover {
+            text-decoration:none;
+            color: #fff;
+        }
+    }
+}
+

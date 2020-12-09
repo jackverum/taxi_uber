@@ -1,0 +1,44 @@
+.car {
+    background-color: #070716;
+    min-height: 500px;
+    position: relative;
+    padding: 35px;
+
+
+    &__logo {
+        background-color: #fff;
+        color: #000;
+    }
+
+    &__title {
+        @include title_box;
+        color: #fff;
+    }
+    &__subtitle {
+        // @include title_box;
+        color: #fff;
+        font-size: 20px;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    &__img {
+        position: absolute;
+        // margin: 0 auto;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -213px;
+    }
+
+    &__bottom {
+        background: url("../img/bg/mobile_app.png") center (center / cover) no-repeat;
+        min-height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        &-text {
+            text-align: center;
+            padding-top: 60px;
+        }
+    } 
+}

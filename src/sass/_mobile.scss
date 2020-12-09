@@ -1,0 +1,95 @@
+.mobile {
+    min-height: 864px;
+    padding: 48px 0 78px 0;
+    background: url('../img/bg/mobile_app.png') center (center / cover) no-repeat;
+
+    &__title {
+        // margin-bottom: 0;
+        // margin-top: 38px;
+        // color: #222222;
+        // font-size: 38px;
+        // font-weight: 700;
+        // text-transform: uppercase;
+        // text-align: center;
+        @include title_box;
+    }
+
+    .row {
+        margin-top: 32px;
+    }
+
+    &__item {
+        width: 320px;
+        height: 280px;
+        background-color: #ccc;
+        // margin: 10px 35px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        position: relative;
+
+        margin: 0 auto;
+        margin-bottom: 19px;
+        /*
+        */
+
+        &-title {
+            padding-top: 90px;
+            font-size: 24px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #ffffff;
+            text-align: center;
+        }
+        &-plus {
+            position: absolute;
+            bottom: 35px;
+            background-color: #000000;
+            border-radius: 100%;
+            width: 26px;
+            height: 26px;
+            padding: 6px;
+            @include flex_center;
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 14px;
+                height: 2px;
+                background-color: #17c1f5;
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                height: 14px;
+                width: 2px;
+                background-color: #17c1f5;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+        &-1 {
+            background: url("/src/img/bg/mobile_screen_1.jpg") center (center / cover) no-repeat;
+        }
+        &-2 {
+            background: url("/src/img/bg/mobile_screen_2.jpg") center (center / cover) no-repeat;
+        }
+        &-3 {
+            background: url("/src/img/bg/mobile_screen_3.jpg") center (center / cover) no-repeat;
+        }
+        &-4 {
+            background: url("/src/img/bg/mobile_screen_4.jpg") center (center / cover) no-repeat;
+        }
+        &-5 {
+            background: url("/src/img/bg/mobile_screen_5.jpg") center (center / cover) no-repeat;
+        }
+        &-6 {
+            background: url("/src/img/bg/mobile_screen_6.jpg") center (center / cover) no-repeat;
+        }
+    }
+}
+

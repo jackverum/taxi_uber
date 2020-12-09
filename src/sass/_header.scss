@@ -1,0 +1,94 @@
+header {
+    position: relative;
+}
+
+
+header nav {
+    position: fixed;
+    width: 100%; 
+    z-index: 3;
+    height: 50px; 
+    background-color: #212121;
+}
+
+.menu {
+    padding: 13px 70px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    list-style-type: none;
+}
+
+.menu .menu__link {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.menu .menu__item {
+    border-right: 1px dotted #000;
+    padding-right: 28px;
+}
+
+.subheader {
+    /* position: relative;
+    z-index: 2; */
+    transform: translateY(50px);
+    position: absolute;
+    width: 100%;
+    height: 84px;
+    background-color: rgba(0, 0, 0, .61);
+}
+
+.subheader .subheader__logo {
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.subheader .subheader__official {
+    min-width: 100%;
+    opacity: .5;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+
+}
+
+.subheader .subheader__call {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 12px;
+    margin-top: 19px;
+    text-align: right;
+}
+
+.subheader .subheader__phone {
+    display: block;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 22px;
+    margin-top: 8px;
+    text-align: right;
+    line-height: 12px;
+}
+
+
+.subheader .subheader__btn {
+    margin-top: 19px;
+    width: 172px;
+    height: 46px;
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+    border: none;
+    border-radius: 4px;
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    @include btn_hover;
+}
